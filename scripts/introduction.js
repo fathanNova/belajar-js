@@ -1,0 +1,1 @@
+document.writeln("Hello, My name is Fathan Nova Arroyan, currently i am a student at Universitas Amikom Yogyakarta. Nowadays, i am learning JavaScript for the first time");

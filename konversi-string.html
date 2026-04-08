@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konversi String</title>
+</head>
+<body>
+    <script>
+
+        // Konversi String ke Number
+        const value1 = parseInt("10");
+        const value2 = 3;
+
+        const result = value1 + value2;
+        document.writeln("<p>" + result + "</p>");
+
+        // Konversi String ke Float
+        const value3 = parseFloat("3.14");
+        const value4 = 2;
+
+        const result2 = value3 * value4;
+        document.writeln("<p>" + result2 + "</p>");
+
+        // Konversi String ke Number (bisa bilangan bulat atau desimal)
+        const value5 = Number("5");
+        const value6 = Number("2.5");
+
+        const result3 = value5 - value6;
+        document.writeln("<p>" + result3 + "</p>");
+
+        // Konversi Number ke String
+        const num = 12500;
+        document.writeln("<p>" + num.toString() + "</p>"); 
+
+        // Number tidak dapat mentolelir string yang tidak valid
+        document.writeln("<p>" + parseInt("one") + "</p>"); // NaN (Not a Number)
+        document.writeln("<p>" + parseFloat("13@") + "</p>"); // 13
+        document.writeln("<p>" + Number("3abc") + "</p>"); // NaN (Not a Number)
+
+        // Fungsi isNaN() untuk memeriksa apakah suatu nilai adalah NaN
+        const value7 = "15.5ac";
+        document.writeln("<p>" + isNaN(value7) + "</p>"); 
+    </script>
+</body>
+</html>
