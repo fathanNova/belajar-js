@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let thisIsArray = []   
+        let listBuah = ["Pisang", "Apel", "Mangga"]
+        console.table(listBuah) // Membuat tabel pada console yang berisi data dari array
+        document.writeln("<p>" + listBuah.length + "</p>")
+        document.writeln("<p>" + listBuah[2] + "</p>")
+        listBuah[1] = "Nanas"
+        delete listBuah[2]
+        document.writeln(listBuah)
+
+        thisIsArray.push("Fathan", "Nova") // Fungsi push digunakan untuk menambahkan data pada array yang sudah dibuat
+        console.table(thisIsArray)
+        thisIsArray.push(["Adi", "Pembolos"])
+        console.table(thisIsArray)
+    </script>
+</body>
+</html>
